@@ -1,0 +1,89 @@
+{
+  "retailer_id": "1",
+  "retailer_name": "Flipkart",
+  "retailer_website": "http://flipkart.com/",
+  "retailer_country": "India",
+  "retailer_code": "Flipkart|India",
+  "locators": {
+    "product_listing_page_xpath": "//div[@class='_3liAhj']/a[@class='_2cLu-l']/@href",
+    "product_has_detail_page": "",
+    "paging_button_xpath": "//nav[@class='_1ypTlJ']/a[text()='%d']",
+    "lazy_load_click_xpath": "",
+    "variant_xpath": "",
+    "delay": "44",
+    "cookies": "",
+    "product_name": {
+      "value": "//h1/span/text()",
+      "sanitize": "",
+      "sanitize_replace": ""
+    },
+    "product_price": {
+      "value": "//div[@class='_1vC4OE _3qQ9m1']/text()[1]",
+      "sanitize": "u20b9",
+      "sanitize_replace": ""
+    },
+    "price_symbol": {
+      "value": "u20b9",
+      "symbol_place": "0"
+    },
+    "product_image": {
+      "value": "//img[@class='_1Nyybr Yun65Y _30XEf0']/@src",
+      "sanitize": "",
+      "sanitize_replace": ""
+    },
+    "product_availability": {
+      "value": "//div[@id='sellerName']//span/text()",
+      "sanitize": "SuperComNet|RetailNet",
+      "sanitize_replace": "1"
+    },
+
+    "product_description": {
+      "value": "//div[@class='bzeytq _3cTEY2']/text()",
+      "sanitize": "",
+      "sanitize_replace": ""
+    },
+    "product_category": {
+      "value": "//div[@class='_1joEet']/div[@class='_1HEvv0'][2]//text()",
+      "sanitize": "",
+      "sanitize_replace": ""
+    },
+    "product_sub_category": {
+      "value": "//div[@class='_1joEet']/div[@class='_1HEvv0'][3]//text()",
+      "sanitize": "",
+      "sanitize_replace": ""
+    },
+    "product_sku": {
+      "value": "",
+      "sanitize": "",
+      "sanitize_replace": ""
+    },
+    "variant": {
+      "value": "",
+      "sanitize": "",
+      "sanitize_replace": ""
+    },
+    "product_review": {
+      "value": "",
+      "sanitize": "",
+      "sanitize_replace": ""
+    },
+    "product_rating": {
+      "value": "",
+      "sanitize": "",
+      "sanitize_replace": ""
+    },
+    "product_buy_now_url": {
+      "value": "//link[@rel='canonical']/@href",
+      "sanitize": "",
+      "sanitize_replace": ""
+    }
+  },
+  "listing": {
+    "id": "2",
+    "brand_name": "Axe - India",
+    "domain_id": "3",
+    "listing_page_url": "https://www.flipkart.com/beauty-and-personal-care/pr?sid=t06&q=axe&otracker=categorytree",
+    "pass_regex": "",
+    "fail_regex": ""
+  }
+}

@@ -1,0 +1,25 @@
+service:
+  name: data-scrapping
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  stage: ${opt:stage, 'staging'}
+  runtime: nodejs12.x
+  region: eu-west-1
+  tags:
+    Name: data-scrapping
+    Platform: "static-first"
+    Environment: ${self:provider.stage}
+
+functions:
+  forEvent:
+    memorySize: 1024
+    timeout: 900
+    handler: handler.forEvent
+    events:
+      - http:
+          path: trigger
+          method: get
